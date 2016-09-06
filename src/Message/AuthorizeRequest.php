@@ -50,7 +50,7 @@ class AuthorizeRequest extends AbstractRequest
     {
         $this->validate('amount', 'card');
 
-        $this->getCard()->validate();
+//        $this->getCard()->validate();
 
         return array('amount' => $this->getAmount());
     }

@@ -27,4 +27,9 @@ class Response extends AbstractResponse
     {
         return isset($this->data['message']) ? $this->data['message'] : null;
     }
+
+    public function getErrorCode()
+    {
+        return null;
+    }
 }
